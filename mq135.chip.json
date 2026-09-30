@@ -1,0 +1,19 @@
+{
+  "name": "mq135",
+  "author": "SmartEnclosure",
+  "pins": [
+    "VCC",
+    "GND",
+    "A0",
+    "D0"
+  ],
+  "controls": [
+    {
+      "id": "ppm",
+      "label": "Gas PPM",
+      "type": "range",
+      "min": 10,
+      "max": 1000
+    }
+  ]
+}
