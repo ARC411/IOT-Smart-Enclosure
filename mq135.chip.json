@@ -1,5 +1,5 @@
 {
-  "name": "mq135",
+  "name": "MQ-135 Gas Sensor",
   "author": "SmartEnclosure",
   "pins": [
     "VCC",
@@ -13,7 +13,8 @@
       "label": "Gas PPM",
       "type": "range",
       "min": 10,
-      "max": 1000
+      "max": 1000,
+      "step": 1
     }
   ]
 }

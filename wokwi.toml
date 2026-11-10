@@ -2,3 +2,11 @@
 version = 1
 elf = ".pio/build/esp32dev/firmware.elf"
 firmware = ".pio/build/esp32dev/firmware.bin"
+
+[[chip]]
+name = "mq135"
+binary = "mq135.chip.wasm"
+
+[[chip]]
+name = "chip-mq135"
+binary = "chip-mq135.chip.wasm"

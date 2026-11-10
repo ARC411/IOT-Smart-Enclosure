@@ -10,7 +10,7 @@
       "left": -119.96,
       "attrs": {}
     },
-    { "type": "chip-mq135", "id": "chip1", "top": 116.22, "left": 52.8, "attrs": {} },
+    { "type": "chip-mq135", "id": "chip1", "top": 116.22, "left": 52.8, "attrs": { "ppm": "400" } },
     {
       "type": "wokwi-dht22",
       "id": "dht1",
@@ -39,7 +39,6 @@
   "connections": [
     [ "esp:TX", "$serialMonitor:RX", "", [] ],
     [ "esp:RX", "$serialMonitor:TX", "", [] ],
-    [ "esp:21", "esp:RX", "green", [ "h0" ] ],
     [ "dht1:VCC", "esp:3V3", "red", [ "h-28.8", "v-345.6" ] ],
     [ "esp:GND.1", "dht1:GND", "black", [ "h-38.25", "v220.8" ] ],
     [ "dht1:SDA", "esp:4", "green", [ "v19.2", "h182.5", "v-249.6" ] ],
@@ -47,7 +46,7 @@
     [ "chip1:GND", "esp:GND.2", "black", [ "h-48", "v-230.4" ] ],
     [ "esp:34", "chip1:A0", "green", [ "h-9.45", "v201.6" ] ],
     [ "oled1:VCC", "esp:3V3", "red", [ "v-134.4", "h-239.85", "v38.4", "v38.4" ] ],
-    [ "esp:GND.3", "oled1:GND", "red", [ "h0" ] ],
+    [ "esp:GND.3", "oled1:GND", "black", [ "h0" ] ],
     [ "esp:21", "oled1:SDA", "green", [ "h0" ] ],
     [ "esp:22", "oled1:SCL", "green", [ "h0" ] ],
     [ "esp:GND.1", "servo1:GND", "black", [ "h-19.05", "v192" ] ],
